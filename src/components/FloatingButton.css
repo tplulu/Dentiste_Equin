@@ -1,0 +1,47 @@
+.floating-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;           /* bouton rond par défaut */
+  height: 60px;
+  border-radius: 50%;
+  background: #00bcd4;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* alignement icône à gauche */
+  padding-left: 15px;           /* espace pour icône visible */
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.6s;
+}
+
+.floating-btn .icon {
+  display: inline-block;
+  z-index: 2;
+}
+
+.floating-btn .hover-text {
+  display: inline-block;
+  transform: translateX(60px); /* texte caché derrière le bouton */
+  opacity: 0;
+  transition: opacity 0.1s, transform 0.4s 0.2s;
+  margin-left: 10px; /* petit espace entre icône et texte */
+}
+
+.floating-btn:hover {
+  width: 180px;        /* largeur pour montrer texte + icône */
+  border-radius: 30px;
+  padding-left: 20px;  /* léger ajustement du padding */
+  background: #fff;
+  color: #00bcd4;
+}
+
+.floating-btn:hover .hover-text {
+  transform: translateX(0);
+  opacity: 1;
+}

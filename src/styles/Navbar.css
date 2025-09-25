@@ -1,0 +1,91 @@
+.navbar {
+    background: #00bcd4;
+    padding: 10px 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* --- Logo --- */
+  .navbar-logo {
+    display: block;
+    position: relative;
+  }
+  .navbar-logo img {
+    height: 100px;       /* ou la taille que tu utilises déjà */
+    width: 100px;        /* force un carré pour un cercle parfait */
+    object-fit: cover;  /* centre l’image dans le cadre */
+    border-radius: 50%; /* 🎯 rend l’image parfaitement ronde */
+    display: block;
+    border: 3px solid white; /* optionnel : contour blanc */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* optionnel : petite ombre */
+  }
+  
+  /* --- Liens --- */
+  .navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: max-height 0.3s ease;
+  }
+  .navbar-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 5px 0;
+  }
+  .navbar-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* --- Bouton burger (desktop : caché) --- */
+  .navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* --- Responsive --- */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 15px 20px;
+    }
+  
+    /* Burger visible */
+    .navbar-toggle {
+      display: block;
+    }
+  
+    /* Liste repliée par défaut */
+    .navbar-list {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #00bcd4;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      max-height: 0;
+      overflow: hidden;
+    }
+  
+    /* Quand on clique sur le burger */
+    .navbar-list.open {
+      max-height: 500px; /* assez grand pour tout afficher */
+      padding: 20px 0;
+    }
+  }
+  
