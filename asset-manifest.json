@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Dentiste_Equin/static/css/main.d2c53c97.css",
-    "main.js": "/Dentiste_Equin/static/js/main.a9c2b4a3.js",
+    "main.js": "/Dentiste_Equin/static/js/main.1ff3900a.js",
     "static/js/453.643dba92.chunk.js": "/Dentiste_Equin/static/js/453.643dba92.chunk.js",
     "static/media/slick.svg": "/Dentiste_Equin/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/Dentiste_Equin/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -9,11 +9,11 @@
     "static/media/slick.woff": "/Dentiste_Equin/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Dentiste_Equin/index.html",
     "main.d2c53c97.css.map": "/Dentiste_Equin/static/css/main.d2c53c97.css.map",
-    "main.a9c2b4a3.js.map": "/Dentiste_Equin/static/js/main.a9c2b4a3.js.map",
+    "main.1ff3900a.js.map": "/Dentiste_Equin/static/js/main.1ff3900a.js.map",
     "453.643dba92.chunk.js.map": "/Dentiste_Equin/static/js/453.643dba92.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d2c53c97.css",
-    "static/js/main.a9c2b4a3.js"
+    "static/js/main.1ff3900a.js"
   ]
 }
