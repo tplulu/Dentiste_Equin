@@ -3,7 +3,7 @@ export default function QuiSuisJe() {
       <div className="quisuisje-wrapper">
         <div className="quisuisje-card">
           <img
-            src="/images/dentiste_8.jpg"
+            src={`${process.env.PUBLIC_URL}/images/dentiste_8.jpg`}
             alt="Portrait de la praticienne"
             className="quisuisje-photo"
           />

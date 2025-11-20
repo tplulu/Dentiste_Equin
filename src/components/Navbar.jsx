@@ -29,7 +29,7 @@ export default function Navbar() {
       {/* Logo */}
       <div className="navbar-logo">
         <Link to="/">
-          <img src="/images/logo2.png" alt="Logo dentiste équin" />
+          <img src={`${process.env.PUBLIC_URL}/images/logo2.png`} alt="Logo dentiste équin" />
         </Link>
       </div>
 

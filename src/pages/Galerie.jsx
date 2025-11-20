@@ -1,8 +1,8 @@
 const photos = [
-    { src: "/images/cheval1.jpg", nom: "Spirit", age: 7 },
-    { src: "/images/cheval2.jpg", nom: "Éclair", age: 10 },
-    { src: "/images/cheval3.jpg", nom: "Belle", age: 5 },
-  ];
+    { src: `${process.env.PUBLIC_URL}/images/cheval1.jpg`, nom: "Spirit", age: 7 },
+    { src: `${process.env.PUBLIC_URL}/images/cheval2.jpg`, nom: "Éclair", age: 10 },
+    { src: `${process.env.PUBLIC_URL}/images/cheval3.jpg`, nom: "Belle", age: 5 },
+  ];  
   
   export default function Galerie() {
     return (

@@ -3,17 +3,16 @@ import "../styles/App.css";
 
 export default function Home() {
   const photos = [
-    "/images/dentiste_1.jpg",
-    "/images/dentiste_2.jpg",
-    "/images/dentiste_3.jpg",
-    "/images/dentiste_4.jpg",
-    "/images/dentiste_5.jpg",
-    "/images/dentiste_6.jpg",
-    "/images/dentiste_7.jpg",
-    "/images/dentiste_8.jpg",
-    "/images/dentiste_9.jpg",
-    "/images/dentiste_8.jpg",
-    "/images/dentiste_10.jpg",
+    `${process.env.PUBLIC_URL}/images/dentiste_1.jpg`,
+    `${process.env.PUBLIC_URL}/images/dentiste_2.jpg`,
+    `${process.env.PUBLIC_URL}/images/dentiste_3.jpg`,
+    `${process.env.PUBLIC_URL}/images/dentiste_4.jpg`,
+    `${process.env.PUBLIC_URL}/images/dentiste_5.jpg`,
+    `${process.env.PUBLIC_URL}/images/dentiste_6.jpg`,
+    `${process.env.PUBLIC_URL}/images/dentiste_7.jpg`,
+    `${process.env.PUBLIC_URL}/images/dentiste_8.jpg`,
+    `${process.env.PUBLIC_URL}/images/dentiste_9.jpg`,
+    `${process.env.PUBLIC_URL}/images/dentiste_10.jpg`,
   ];
 
   return (
